@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root{
+    --themeColor : darkviolet;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--themeColor);
+}
+
+.backTop{
+    position: fixed;
+    background-color: var(--themeColor);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 15px;
+    right: 15px;
+    z-index: 5;
+}
+
+.backTop a{
+    color: white;
+    text-decoration: none;
+}
+
+h2{
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* Navigation bar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    height: 5vh;
+    background: white;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.logo img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.logo p{
+  font-size: x-large;
+  margin-left: 5px;
+}
+
+.links{
+    display: flex;
+    margin-right: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: large;
+}
+
+
+/* Small Navbar links*/
+
+.hamburger{
+    display: none;
+    z-index: 2;
+}
+
+.hamburger div{
+    width: 25px;
+    height: 4px;
+    background-color: var(--themeColor);
+    margin: 3px 0;
+    border-radius: 10px;
+    margin-right: 10px;
+   
+}
+
+.cross{
+    display: none;
+    font-size: 25px;
+    color: var(--themeColor);
+    margin-right: 10px;
+    z-index: 2;
+}
+
+
+.linksSmall{
+    background-color: aliceblue;
+    position: absolute;
+    border-radius: 10px;
+    border: 1px solid gray;
+    /* right: 10px; */
+    right: -100px;
+    top: 60px;
+    width: 120px;
+    display: none;
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+.linksSmall div{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.linksSmall div a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: larger;
+}
+
+
+@media screen and (max-width: 900px) {
+    .hamburger{
+        display: block;
+    }
+
+    .links{
+        display: none;
+    } 
+}
+
+
+/* Home Section */
+
+.home{
+  background: url("../images/image121.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 87vh;
+  background-color: white;
+  margin: 10px;
+  border-radius: 10px;
+  height: 87vh;
+}
+
+.home img{
+    width: 310px;
+    border-radius: 50%;
+    background-color: blue;
+    border: 1px solid blue;
+}
+
+.home p{
+    /* font-size: 40px; */
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.home p span{
+    color: darkblue;
+}
+
+
+/* Projects */
+.projects{
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* .projects h2{
+    text-align: center;
+    padding-top: 10px;
+} */
+
+.pBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.pCard{
+    padding: 10px;
+    margin: 20px 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.pHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.pHead button{
+    background-color: var(--themeColor);
+    border: none;
+    width: 70px;
+    padding: 4px 0;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.pCard img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* Skills Tab */
+.skills{
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.skillsBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skillsBox div{
+    text-align: center;
+    margin: 20px;
+    border: 2px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+    width: 120px;
+    height: 120px;
+}
+
+
+.skillsBox div img{
+   width: 100px;
+   height: 100px;
+   /* background-color: blue; */
+}
+
+
+/* Contact Div */
+.contact{
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* .contact h2{
+    text-align: center;
+    padding: 10px 0;
+} */
+
+.contact div{
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 10px 0;
+}
+
+.socials a img{
+    width: 35px;
+    margin: 5px 10px;
+}
+
+
+/* Footer */
+footer{
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    padding: 10px 0;
+}
