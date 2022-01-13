@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pranjal Singh - Portfolio</title>
     <link rel="shortcut icon" href="./images/Pranjalslogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./projects/solar system/solar.css">
+    <link rel="stylesheet" href="./projects/dice/dice.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -54,12 +56,31 @@
         <img src="./images/pranjal singh image small 2.jpg" alt="Image">
     </div>
 
+    <div class="solarDiv">
+        <div class="solar">
+            <div class="sun"></div>
+            <div class="planet mercury"></div>
+            <div class="planet venus"></div>
+            <div class="planet earth">
+                <figure class="moon planet"></figure>
+            </div>
+            <div class="planet mars"></div>
+            <div class="planet jupiter"></div>
+            <div class="planet satern">
+                <div class="ring"></div>
+            </div>
+            <div class="planet uranus"></div>
+            <div class="planet neptune"></div>
+        </div>
+    </div>
+
+
     <div class="projects" id="projects">
         <h2>Projects</h2>
         <div class="pBox">
             <div class="pCard">
                 <div class="pHead">
-                    <h3>Project Name</h3>
+                    <h3>Cloud Notes App</h3>
                     <button>Open</button>
                 </div>
                 <img src="./images/pranjal singh image small 2.jpg" alt="">
@@ -67,7 +88,7 @@
 
             <div class="pCard">
                 <div class="pHead">
-                    <h3>Project Name</h3>
+                    <h3>Some Rest Api</h3>
                     <button>Open</button>
                 </div>
                 <img src="./images/pranjal singh image small 2.jpg" alt="">
@@ -75,7 +96,7 @@
 
             <div class="pCard">
                 <div class="pHead">
-                    <h3>Project Name</h3>
+                    <h3>React News App</h3>
                     <button>Open</button>
                 </div>
                 <img src="./images/pranjal singh image small 2.jpg" alt="">
@@ -83,26 +104,67 @@
 
             <div class="pCard">
                 <div class="pHead">
-                    <h3>Project Name</h3>
+                    <h3>Weather App</h3>
                     <button>Open</button>
                 </div>
-                <img src="./images/pranjal singh image small 2.jpg" alt="">
+                <img src="./images/weatherapp.png" alt="">
             </div>
 
             <div class="pCard">
                 <div class="pHead">
-                    <h3>Project Name</h3>
+                    <h3>Nasa Open Api Project</h3>
                     <button>Open</button>
                 </div>
-                <img src="./images/pranjal singh image small 2.jpg" alt="">
+                <img src="./images/nasaapi.png" alt="">
             </div>
 
             <div class="pCard">
                 <div class="pHead">
-                    <h3>Project Name</h3>
+                    <h3>Slider Game</h3>
                     <button>Open</button>
                 </div>
-                <img src="./images/pranjal singh image small 2.jpg" alt="">
+                <img src="./images/slidegame.png" alt="">
+            </div>
+
+            <div class="pCard">
+                <div class="pHead">
+                    <h3>RGB Game</h3>
+                    <button>Open</button>
+                </div>
+                <img src="./images/rgbgame.png" alt="">
+            </div>
+
+            <div class="pCard">
+                <div class="pHead">
+                    <h3>Dice</h3>
+                    <button id="rotateDice">Rotate</button>
+                </div>
+                <div class="rp">
+                    <div class="container">
+                        <div class="cube" id="cube">
+                            <div class="front" id="front">1</div>
+                            <div class="left">2</div>
+                            <div class="right">3</div>
+                            <div class="back">4</div>
+                            <div class="top">5</div>
+                            <div class="bottom">6</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <img src="./images/pranjal singh image small 2.jpg" alt=""> -->
+            </div>
+
+            <div class="pCard">
+                <div class="pHead">
+                    <h3>FPS Meter</h3>
+                    <button id="fpsMeasure">Measure</button>
+                </div>
+                <div class="rp">
+                    <div class="container">
+                        <p style="color: white;">Your Screen Refresh Rate is <span id="fpsBox">-</span> Hz</p>
+                    </div>
+                </div>
+                <!-- <img src="./images/pranjal singh image small 2.jpg" alt=""> -->
             </div>
         </div>
     </div>
@@ -153,6 +215,8 @@
         Copyright © <span id="yearSpan"></span> Pranjal Singh
     </footer>
 </body>
+<script src="./projects/dice/dice.js"></script>
+<script src="./projects/fps meter/script.js"></script>
 <script src="./js/script.js"></script>
 
 </html>
